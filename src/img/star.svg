@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="half-fill">
+      <stop offset="50%" stop-color="red" />
+      <stop offset="50%" stop-color="transparent" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+
+    <linearGradient id="half-stroke">
+      <stop offset="50%" stop-color="red" />
+      <stop offset="100%" stop-color="yellow" />
+    </linearGradient>
+
+  </defs>
+
+
+  <symbol id="empty" viewBox="0 0 32 32">
+    <path
+      fill="none"
+      stroke="url(#half-stroke)"
+      stroke-width="1.7778"
+      d="M30 13h-10.75l-3.25-10-3.25 10h-10.75l8.75 6-3.375 10 8.625-6.25 8.625 6.25-3.375-10 8.75-6z"
+    />
+  </symbol>
+
+
+  <symbol id="full" viewBox="0 0 32 32">
+    <path
+      fill="red"
+      stroke="red"
+      stroke-width="1.7778"
+      d="M30 13h-10.75l-3.25-10-3.25 10h-10.75l8.75 6-3.375 10 8.625-6.25 8.625 6.25-3.375-10 8.75-6z"
+    />
+  </symbol>
+
+
+  <symbol id="half" viewBox="0 0 32 32">
+    <path
+      fill="url(#half-fill)"
+      stroke="url(#half-stroke)"
+      stroke-width="1.7778"
+      d="M30 13h-10.75l-3.25-10-3.25 10h-10.75l8.75 6-3.375 10 8.625-6.25 8.625 6.25-3.375-10 8.75-6z"
+    />
+  </symbol>
+
+ <symbol id="dropdown" viewBox="0 0 32 32">
+    <path d="M4 10L16 22L28 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+</svg>
