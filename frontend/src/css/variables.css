@@ -1,0 +1,24 @@
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --orange: #f87719;
+  --orange-deep: #f84119;
+  --background: #111111;
+  --surface-dark: #171717;
+  --secondary-black: #282828;
+  --grey-white-theme: #595959;
+  --grey: #b7b7b7;
+  --secondary-text: #f8f8f8;
+  --white: #ffffff;
+  --black: #000000;
+  --gradient-primary: linear-gradient(135deg, #ffc226, #f84119);
+  --gradient-secondary: linear-gradient(135deg, #f84119, #f89f19);
+  --border-light-soft: rgba(17, 17, 17, 0.12);
+  --border-light: rgba(17, 17, 17, 0.16);
+  --border-light-strong: rgba(17, 17, 17, 0.24);
+  --text-light-muted: rgba(17, 17, 17, 0.6);
+  --text-dark-muted: rgba(255, 255, 255, 0.6);
+  --text-dark-soft: rgba(255, 255, 255, 0.8);
+  --surface-white-soft: #f6f6f6;
+  --overlay-white-08: rgba(255, 255, 255, 0.08);
+  --scrollbar-thumb: rgba(248, 119, 25, 0.7);
+}

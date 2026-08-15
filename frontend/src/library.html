@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemania — My Library</title>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/library.css" />
+  </head>
+  <body>
+    <load src="./partials/header.html" />
+
+    <main>
+      <section id="hero" class="hero"></section>
+
+      <section class="library-filters">
+        <div class="container filter-container">
+          <div id="genreFilter" class="custom-select" aria-haspopup="listbox">
+            <button
+              type="button"
+              class="custom-select__button"
+              aria-expanded="false"
+            >
+              <span class="custom-select__label">All Genres</span>
+              <span class="custom-select__arrow">▾</span>
+            </button>
+            <ul class="custom-select__list hide" role="listbox"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-content">
+        <div class="container">
+          <div id="libraryGallery"></div>
+          <button id="loadMore" class="btn-load-more is-hidden" type="button">Load more</button>
+        </div>
+      </section>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <load src="./partials/modal.html" />
+    <load src="./partials/loader.html" />
+
+    <script type="module" src="./js/library.js"></script>
+  </body>
+</html>

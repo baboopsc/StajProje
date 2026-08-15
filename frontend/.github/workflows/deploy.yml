@@ -1,0 +1,38 @@
+name: Build and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      VITE_TMDB_KEY: ${{ secrets.VITE_TMDB_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Validate TMDB key
+        run: |
+          if [ -z "$VITE_TMDB_KEY" ]; then
+            echo "Missing VITE_TMDB_KEY GitHub secret."
+            exit 1
+          fi
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: dist
